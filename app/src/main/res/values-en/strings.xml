@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Just Java by Serj</string>
+    <string name="Cпасибо">Thank you!</string>
+    <string name="Топинги">Toppings</string>
+    <string name="Введите_Ваше_имя">Enter your name</string>
+    <string name="Взбитые_сливки">Whipped cream</string>
+    <string name="Добавить_взбитые_сливки">Add whipped cream?</string>
+    <string name="Добавить_сахар">Add sugar?</string>
+    <string name="Количество">Quantity</string>
+    <string name="Количество_чашек">Quantity cups:</string>
+    <string name="Заказать">Order</string>
+    <string name="Состав_заказа">Order list</string>
+    <string name="Цена">Price:</string>
+    <string name="from_Serj">" * from Serj"</string>
+    <string name="JustJava_for">"Just Java for * "</string>
+    <string name="Сахар">Sugar</string>
+</resources>

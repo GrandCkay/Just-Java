@@ -1,0 +1,18 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Just Java by Serj</string>
+    <string name="Топинги">Топинги</string>
+    <string name="Взбитые_сливки">Взбитые сливки</string>
+    <string name="Количество">Количество</string>
+    <string name="Состав_заказа">Состав заказа</string>
+    <string name="Заказать">Заказать</string>
+    <string name="JustJava_for">Just Java for * </string>
+    <string name="from_Serj"> * from Serj</string>
+    <string name="you_name" translatable="false">Имя: <xliff:g id="name" example="Any">%1$s</xliff:g></string>
+    <string name="Добавить_взбитые_сливки">Добавить взбитые сливки? </string>
+    <string name="Добавить_сахар">Добавить сахар? </string>
+    <string name="Количество_чашек">Количество чашек: </string>
+    <string name="Цена">Цена: </string>
+    <string name="Cпасибо">Cпасибо!</string>
+    <string name="Введите_Ваше_имя">Введите_Ваше_имя</string>
+    <string name="Сахар">Сахар</string>
+</resources>
