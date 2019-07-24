@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         messageTotalPrice += "\n " + getString(R.string.Добавить_сахар) + " " + hasSugarCheckBox;
         messageTotalPrice += "\n " + getString(R.string.Количество_чашек) + " " + quantity;
         messageTotalPrice += "\n " + getString(R.string.Цена) + " " + price + " $";
-        messageTotalPrice += "\n" + getString(R.string.Cпасибо);
+        messageTotalPrice += "\n " + getString(R.string.Cпасибо);
         return messageTotalPrice;
 
 
