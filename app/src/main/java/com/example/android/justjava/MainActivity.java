@@ -77,13 +77,13 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        CheckBox whippedCreamCheckBox = (CheckBox) findViewById(R.id.whipped_cream);
+        CheckBox whippedCreamCheckBox = findViewById(R.id.whipped_cream);
         boolean hasWhippedCream = whippedCreamCheckBox.isChecked();
 
-        CheckBox sugarCheckBox = (CheckBox) findViewById(R.id.sugar);
+        CheckBox sugarCheckBox = findViewById(R.id.sugar);
         boolean hasSugarCheckBox = sugarCheckBox.isChecked();
 
-        EditText youNameEditText = (EditText) findViewById(R.id.you_name);
+        EditText youNameEditText = findViewById(R.id.you_name);
         String youName = youNameEditText.getText().toString();
 
         int price = calculatePrice(hasWhippedCream, hasSugarCheckBox);
@@ -96,8 +96,10 @@ public class MainActivity extends AppCompatActivity {
         intentEmail.setType("*/*");
         intentEmail.putExtra(Intent.EXTRA_TEXT, createOrderSummary(youName, hasWhippedCream, hasSugarCheckBox, price));
         intentEmail.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.JustJava_for) + " " + youName + " " + getString(R.string.from_Serj));
-        if (intentEmail.resolveActivity(getPackageManager()) != null) ;
-        startActivity(intentEmail);
+
+            if (intentEmail.resolveActivity(getPackageManager()) != null) {
+                startActivity(intentEmail);
+            }
     }
 
     /**
@@ -128,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
         messageTotalPrice += "\n " + getString(R.string.Добавить_сахар) + " " + hasSugarCheckBox;
         messageTotalPrice += "\n " + getString(R.string.Количество_чашек) + " " + quantity;
         messageTotalPrice += "\n " + getString(R.string.Цена) + " " + price + " $";
-        messageTotalPrice += "\n "  + getString(R.string.Cпасибо);
+        messageTotalPrice += "\n " + getString(R.string.Cпасибо);
         return messageTotalPrice;
 
 
@@ -138,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
      * This method displays the given quantity value on the screen.
      */
     private void displayQuantity(int number) {
-        TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
+        TextView quantityTextView = findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
     }
 
@@ -146,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
      * This method displays the given text on the screen.
      */
     private void displayMessage(String message) {
-        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
+        TextView orderSummaryTextView = findViewById(R.id.order_summary_text_view);
         orderSummaryTextView.setText(message);
     }
 }
