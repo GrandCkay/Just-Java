@@ -90,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
 
         createOrderSummary(youName, hasWhippedCream, hasSugarCheckBox, price);
 
+        displayMessage(createOrderSummary(youName, hasWhippedCream, hasSugarCheckBox, price));
+
         Intent intentEmail = new Intent(Intent.ACTION_SEND);
         intentEmail.setType("*/*");
         intentEmail.putExtra(Intent.EXTRA_TEXT, createOrderSummary(youName, hasWhippedCream, hasSugarCheckBox, price));
@@ -126,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         messageTotalPrice += "\n " + getString(R.string.Добавить_сахар) + " " + hasSugarCheckBox;
         messageTotalPrice += "\n " + getString(R.string.Количество_чашек) + " " + quantity;
         messageTotalPrice += "\n " + getString(R.string.Цена) + " " + price + " $";
-        messageTotalPrice += "\n " + getString(R.string.Cпасибо);
+        messageTotalPrice += "\n "  + getString(R.string.Cпасибо);
         return messageTotalPrice;
 
 
@@ -138,5 +140,13 @@ public class MainActivity extends AppCompatActivity {
     private void displayQuantity(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
+    }
+
+    /**
+     * This method displays the given text on the screen.
+     */
+    private void displayMessage(String message) {
+        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
+        orderSummaryTextView.setText(message);
     }
 }
