@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the order button is clicked.
      */
+
     public void submitOrder(View view) {
         CheckBox whippedCreamCheckBox = findViewById(R.id.whipped_cream);
         boolean hasWhippedCream = whippedCreamCheckBox.isChecked();
@@ -108,7 +109,9 @@ public class MainActivity extends AppCompatActivity {
      * pricePenCup is the  price one cup coffee
      */
     private int calculatePrice(boolean hasWhippedCream, boolean hasSugarCheckBox) {
+
         int totalPrice;
+
         if (hasWhippedCream) {
             totalPrice = (pricePenCup + whippedCream) * quantity;
         } else {
@@ -132,8 +135,6 @@ public class MainActivity extends AppCompatActivity {
         messageTotalPrice += "\n " + getString(R.string.Цена) + " " + price + " $";
         messageTotalPrice += "\n " + getString(R.string.Cпасибо);
         return messageTotalPrice;
-
-
     }
 
     /**
