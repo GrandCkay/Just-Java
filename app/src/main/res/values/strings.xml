@@ -7,7 +7,7 @@
     <string name="Заказать">Заказать</string>
     <string name="JustJava_for">Just Java for * </string>
     <string name="from_Serj"> * from Serj</string>
-    <string name="you_name" translatable="false">Имя: <xliff:g id="name" example="Any">%1$s</xliff:g></string>
+    <string name="Имя">Имя: </string>
     <string name="Добавить_взбитые_сливки">Добавить взбитые сливки? </string>
     <string name="Добавить_сахар">Добавить сахар? </string>
     <string name="Количество_чашек">Количество чашек: </string>

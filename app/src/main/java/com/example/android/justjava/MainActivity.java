@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         quantity = savedInstanceState.getInt("quantity");
@@ -128,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
      * price is the calculatePrice
      */
     private String createOrderSummary(String youName, boolean hasWhippedCream, boolean hasSugarCheckBox, int price) {
-        String messageTotalPrice = " " + getString(R.string.you_name, youName);
+        String messageTotalPrice = " " + getString(R.string.Имя) + " " + youName;
         messageTotalPrice += "\n " + getString(R.string.Добавить_взбитые_сливки) + " " + hasWhippedCream;
         messageTotalPrice += "\n " + getString(R.string.Добавить_сахар) + " " + hasSugarCheckBox;
         messageTotalPrice += "\n " + getString(R.string.Количество_чашек) + " " + quantity;
